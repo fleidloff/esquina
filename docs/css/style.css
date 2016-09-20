@@ -53,7 +53,7 @@
   background-size: 100%;
   background-position: 0 0;
   background-attachment: scroll;
-  top: 0;
+  top: -10px;
   min-height: 444px;
   min-width: 667px;
   width: 100%;
@@ -65,8 +65,8 @@
 .portrait .page-content {
   margin-top: 0;
 }
-.portrait .page-logo--1 {
-  display: none;
+.portrait .page-logo--1 img {
+  width: 280px;
 }
 body {
   padding: 0;
