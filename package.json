@@ -18,7 +18,7 @@
     "src/less/**/*.less": ["less"],
     "src/jade/**/*.jade": ["jade"],
     "src/js/**/*.js": ["copy:js"],
-    "src/js/**/*.{jpg,png,gif}": ["copy:img"]
+    "src/img/**/*.{jpg,png,gif}": ["copy:img"]
   },
   "repository": {
     "type": "git",

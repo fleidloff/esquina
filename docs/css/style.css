@@ -115,6 +115,35 @@
   text-decoration: underline;
   display: block;
 }
+.references .reference {
+  padding: 10px;
+  max-width: 700px;
+  border-left: 2px solid grey;
+  margin: 10px;
+}
+.live {
+  text-align: center;
+}
+.live p,
+.live h2,
+.live iframe {
+  padding: 10px;
+  max-width: 700px;
+}
+.members .member {
+  padding: 10px;
+  max-width: 700px;
+}
+.members .member.left {
+  border-right: 2px solid grey;
+  text-align: right;
+  margin: 10px;
+}
+.members .member.right {
+  border-left: 2px solid grey;
+  text-align: left;
+  margin: 10px;
+}
 .intro p,
 .intro h1,
 .intro h2,
@@ -122,9 +151,6 @@
 .intro iframe {
   padding: 10px;
   max-width: 700px;
-}
-.intro .pure-button-primary {
-  background-color: #27AB60;
 }
 body {
   padding: 0;
@@ -137,6 +163,17 @@ body {
   z-index: 1;
   color: white;
   padding: 10px;
+}
+.content {
+  padding: 10px;
+  max-width: 700px;
+}
+.pure-button-primary {
+  background-color: #2760AB;
+  font-size: 125%;
+}
+.center {
+  text-align: center;
 }
 /*
 When setting the primary font stack, apply it to the Pure grid units along
