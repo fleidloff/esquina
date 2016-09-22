@@ -6,16 +6,16 @@
 .page-poster {
   height: 100vh;
   width: 100%;
-  background: yellow;
+  background: white;
   position: absolute;
   top: -100vh;
   left: 0;
 }
 .page-poster--1 {
-  background: url("../img/esquina_latina_hq1.jpg") no-repeat center center fixed;
+  background: url("../img/esquina_latina_hq1.jpg") white no-repeat center center fixed;
 }
 .page-poster--2 {
-  background: url("../img/esquina_latina_hq2.jpg") no-repeat center center fixed;
+  background: url("../img/esquina_latina_hq2.jpg") white no-repeat center center fixed;
 }
 .page-poster--border {
   border: 1px solid white;
@@ -30,6 +30,8 @@
   position: relative;
   margin-top: 100vh;
   background: white;
+  border-top: 40px solid #2760AB;
+  border-bottom: 40px solid #2760AB;
 }
 .page-content p,
 .page-content h2,
@@ -37,11 +39,6 @@
 .page-content iframe {
   padding: 10px;
   max-width: 700px;
-}
-.page-content-banner {
-  height: 40px;
-  margin-top: 10px;
-  background: #2760AB no-repeat center center;
 }
 .page-logo {
   text-align: center;
@@ -58,11 +55,10 @@
   background-size: 100%;
   background-position: 0 0;
   background-attachment: scroll;
-  top: -10px;
-  min-height: 444px;
-  min-width: 667px;
-  width: 100%;
-  height: 50vh;
+  width: 667px;
+  height: 444px;
+  top: 0;
+  background-color: #2760AB;
 }
 .portrait .page-poster--border {
   top: 0;

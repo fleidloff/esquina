@@ -10,7 +10,15 @@
     "copy:css": "cp -r src/css docs/",
     "copy:js": "cp -r src/js docs/",
     "copy:img": "cp -r src/img docs/",
-    "build": "npm run jade && npm run less && npm run copy"
+    "build": "npm run jade && npm run less && npm run copy",
+    "watch": "npm-scripts-watcher",
+    "dev": "npm run build && npm run watch"
+  },
+  "watch": {
+    "src/less/**/*.less": ["less"],
+    "src/jade/**/*.jade": ["jade"],
+    "src/js/**/*.js": ["copy:js"],
+    "src/js/**/*.{jpg,png,gif}": ["copy:img"]
   },
   "repository": {
     "type": "git",
@@ -25,5 +33,8 @@
   "dependencies": {
     "jade": "^1.11.0",
     "less": "^2.7.1"
+  },
+  "devDependencies": {
+    "npm-scripts-watcher": "^1.0.2"
   }
 }
