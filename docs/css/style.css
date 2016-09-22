@@ -38,6 +38,11 @@
   padding: 10px;
   max-width: 700px;
 }
+.page-content-banner {
+  height: 40px;
+  margin-top: 10px;
+  background: #2760AB no-repeat center center;
+}
 .page-logo {
   text-align: center;
   margin-top: 10px;
@@ -71,10 +76,25 @@
 body {
   padding: 0;
   margin: 0;
-  min-width: 668px;
+  min-width: 667px;
 }
 .footer {
-  background: red;
+  background: #D11F1F;
   position: relative;
   z-index: 1;
+  color: white;
+  padding: 10px;
+}
+/*
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  font-family: 'David Libre', cursive, serif;
 }
