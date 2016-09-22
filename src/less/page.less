@@ -13,11 +13,11 @@
 		left: 0;
 
 		&--1 {
-			background: url("../img/esquina_latina_hq1.jpg") white no-repeat center center fixed;
+			background: url("../img/esquina_latina_hq1_667.jpg") white no-repeat center center fixed;
 		}
 
 		&--2 {
-			background: url("../img/esquina_latina_hq2.jpg") white no-repeat center center fixed;
+			background: url("../img/esquina_latina_hq2_667.jpg") white no-repeat center center fixed;
 		}
 		
 		&--border {
@@ -37,11 +37,6 @@
 		background: white;
 		border-top: 40px solid @cuban-blue;
 		border-bottom: 40px solid @cuban-blue;
-
-		p, h2, h3, iframe {
-			padding: 10px;
-			max-width: 700px;
-		}
 	}
 
 	&-logo {
@@ -51,7 +46,7 @@
 
 }
 
-.landscape {
+@media all and (orientation: landscape) {
 
 	.page {
 		&-poster {
@@ -63,7 +58,7 @@
 	}
 }
 
-.portrait {
+@media all and (orientation: portrait) {
 
 	.page {
 
@@ -73,8 +68,9 @@
 			background-position: 0 0;
 			background-attachment: scroll;
 			width: 667px;
-			height: 444px;
+			height: 443px;
 			top: 0;
+			margin-top: -10px;
 			background-color: @cuban-blue;
 
 			&--border {
@@ -91,4 +87,40 @@
 		}
 
 	}	
+}
+
+@media all and (min-width: 668px) {
+	.page-poster--1 {
+		background-image: url("../img/esquina_latina_hq1_1024.jpg");
+	}
+	.page-poster--2 {
+		background-image: url("../img/esquina_latina_hq2_1024.jpg");
+	}
+}
+
+@media all and (min-width: 1025px) {
+	.page-poster--1 {
+		background-image: url("../img/esquina_latina_hq1_1536.jpg");
+	}
+	.page-poster--2 {
+		background-image: url("../img/esquina_latina_hq2_1536.jpg");
+	}
+}
+
+@media all and (min-width: 1537px) {
+	.page-poster--1 {
+		background-image: url("../img/esquina_latina_hq1_2048.jpg");
+	}
+	.page-poster--2 {
+		background-image: url("../img/esquina_latina_hq2_2048.jpg");
+	}
+}
+
+@media all and (min-width: 2049px) {
+	.page-poster--1 {
+		background-image: url("../img/esquina_latina_hq1.jpg");
+	}
+	.page-poster--2 {
+		background-image: url("../img/esquina_latina_hq2.jpg");
+	}
 }

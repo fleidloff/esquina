@@ -4,11 +4,10 @@ html
         link(rel="stylesheet" href="css/pure.min.css")
         link(rel="stylesheet" href="css/style.css")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=David+Libre:400,700")
-    body(class="landscape")
+    body
         .page
             .page-poster.page-poster--1
                 .page-poster--border
-
                 .page-logo.page-logo--1
                     img(src="img/hatBanner.png")
             .page-content
@@ -16,8 +15,24 @@ html
         .page
             .page-poster.page-poster--2
                 .page-poster--border
+                .page-logo.page-logo--1
+                    img(src="img/hatBanner.png")
             .page-content
                 include page-content--2
+        .page
+            .page-poster.page-poster--1
+                .page-poster--border
+                .page-logo.page-logo--1
+                    img(src="img/hatBanner.png")
+            .page-content
+                include page-content--3
+        .page
+            .page-poster.page-poster--2
+                .page-poster--border
+                .page-logo.page-logo--1
+                    img(src="img/hatBanner.png")
+            .page-content
+                include page-content--4
         .footer imprint, links, kontakt
 
         script(src="js/app.js")
