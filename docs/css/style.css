@@ -51,8 +51,8 @@
     background-size: 100%;
     background-position: 0 0;
     background-attachment: scroll;
-    width: 667px;
-    height: 443px;
+    width: 734px;
+    height: 489.33333333px;
     top: 0;
     margin-top: -10px;
     background-color: #2760AB;
@@ -152,38 +152,65 @@
   padding: 10px;
   max-width: 700px;
 }
-.header {
+.header,
+.header-background,
+.header-social {
   position: absolute;
   bottom: 20px;
   right: 20px;
   color: white;
   font-size: 125%;
   z-index: 1000;
-  transition: background-color 0.5s ease;
 }
-.header a {
+.header a,
+.header-background a,
+.header-social a {
   color: white;
   text-decoration: underline;
   margin: 0 10px;
 }
-.fix-header .header {
+.header-background {
+  transition: background-color 0.5s ease;
+}
+.header-social {
+  display: none;
+}
+.fix-header .header,
+.fix-header .header-background {
   position: fixed;
   top: 0px;
-  right: 0px;
+  left: 0px;
   padding: 10px;
+  height: 20px;
+  text-align: right;
+  min-width: 734px;
+}
+.fix-header .header a,
+.fix-header .header-background a {
+  text-decoration: none;
+}
+.fix-header .header-background {
+  display: block;
+  width: 100%;
   background-color: #2760AB;
   border-bottom: 1px solid white;
-  height: 20px;
-  width: 100%;
-  text-align: right;
+  min-width: 734px;
 }
-.fix-header .header a {
-  text-decoration: none;
+.fix-header .header-social {
+  display: block;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  margin: 7px;
+  min-width: 734px;
+}
+.fix-header .header-social a {
+  padding: 2px;
 }
 body {
   padding: 0;
   margin: 0;
-  min-width: 667px;
+  min-width: 734px;
 }
 .footer {
   background: #D11F1F;

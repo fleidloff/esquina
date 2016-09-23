@@ -1,4 +1,4 @@
-.header {
+.header, .header-background, .header-social {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
@@ -11,23 +11,43 @@
 		margin: 0 10px;
 	}
 	z-index: 1000;
+}
+.header-background {
 	transition: background-color 0.5s ease;
+}
+.header-social {
+	display: none;
 }
 
 .fix-header {
-	.header {
+	.header, .header-background {
 		position: fixed;
 		top: 0px;
-		right: 0px;
+		left: 0px;
 		padding: 10px;
-		background-color: @cuban-blue;
-		border-bottom: 1px solid white;
 		height: 20px;
-		width: 100%;
 		text-align: right;
-
+		min-width: @min-width;
 		a {
 			text-decoration: none;
+		}
+	}
+	.header-background {
+		display: block;
+		width: 100%;
+		background-color: @cuban-blue;
+		border-bottom: 1px solid white;
+		min-width: @min-width;
+	}
+	.header-social {
+		display: block;
+		left: 0px;
+		top: 0px;
+		position: fixed;
+		margin: 7px;
+		min-width: @min-width;
+		a {
+			padding: 2px;
 		}
 	}
 }
