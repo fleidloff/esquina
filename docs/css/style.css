@@ -175,6 +175,9 @@
 .header-social {
   display: none;
 }
+.fix-header {
+  z-index: 1000;
+}
 .fix-header .header,
 .fix-header .header-background {
   position: fixed;
@@ -229,6 +232,9 @@ body {
 }
 .center {
   text-align: center;
+}
+.z-index-1200 {
+  z-index: 1200;
 }
 /*
 When setting the primary font stack, apply it to the Pure grid units along

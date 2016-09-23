@@ -7,7 +7,7 @@ html
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=David+Libre:400,700")
     body
         .page
-            .page-poster.page-poster--1
+            .page-poster.page-poster--1.z-index-1200
                 .page-poster--border
                 .page-logo.page-logo--1
                     img(src="img/hatBanner.png")
@@ -36,5 +36,6 @@ html
             .page-content
                 include page-content--4
         .footer imprint, links, kontakt
-
+        .fix-header
+            include header
         script(src="js/app.js")
