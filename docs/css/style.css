@@ -30,8 +30,8 @@
   position: relative;
   margin-top: 100vh;
   background: white;
-  border-top: 40px solid #2760AB;
-  border-bottom: 40px solid #2760AB;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .page-logo {
   text-align: center;
@@ -179,6 +179,22 @@
 .header-social a {
   padding: 0px;
 }
+.contact {
+  margin-bottom: 20px;
+}
+.contact h2,
+.contact p {
+  padding: 10px;
+  max-width: 700px;
+}
+.contact a {
+  color: black;
+  text-decoration: underline;
+}
+.contact.address {
+  margin-top: 50px;
+  text-align: right;
+}
 body {
   padding: 0;
   margin: 0;
@@ -190,12 +206,13 @@ body {
   z-index: 1;
   color: white;
   padding: 10px;
+  text-align: center;
 }
 .content {
   padding: 10px;
   max-width: 700px;
 }
-.pure-button-primary {
+a.pure-button-primary {
   background-color: #2760AB;
   font-size: 125%;
 }
