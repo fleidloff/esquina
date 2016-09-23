@@ -1,0 +1,33 @@
+.header {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: white;
+	font-size: 125%;
+
+	a {
+		color: white;
+		text-decoration: underline;
+		margin: 0 10px;
+	}
+	z-index: 1000;
+	transition: background-color 0.5s ease;
+}
+
+.fix-header {
+	.header {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		padding: 10px;
+		background-color: @cuban-blue;
+		border-bottom: 1px solid white;
+		height: 20px;
+		width: 100%;
+		text-align: right;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
