@@ -202,7 +202,7 @@
   top: 0px;
   position: fixed;
   margin: 7px;
-  min-width: 734px;
+  width: 260px;
 }
 .fix-header .header-social a {
   padding: 2px;
